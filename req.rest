@@ -1,0 +1,64 @@
+GET http://localhost:3000/api/auth/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwidXNlcm5hbWUiOiJoZW5kcnkiLCJlbWFpbCI6ImhlbmRyeUBnbWFpbC5jb20iLCJuYW1lIjoiaGVuZHJ5IiwiaWF0IjoxNjcyMTUwNTQ4LCJleHAiOjE2NzIyMzY5NDh9.pgBStDa4bTmOe3-Y8O6l9LQkkRoo_nWTSMbyJfjWqgY
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "hendry@gmail.com",
+    "username": "hendry",
+    "name":  "hendry",
+    "password":"123",
+    "confPassword":"123"
+}
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "hendry",
+    "pass": "123"
+}
+
+###
+PUT http://localhost:3000/api/auth/edit
+Content-Type: application/json
+
+{
+    "email": "hendry@gmail.com",
+    "username": "hendry",
+    "name":  "hendry",
+    "password":"1234",
+    "newPassword":"123"
+}
+
+
+###
+DELETE  http://localhost:3000/api/auth/delete
+Content-Type: application/json
+
+{
+    "email": "hendry@gmail.com",
+    "password":"123"
+}
+
+###
+GET http://localhost:3000/api/auth/token
+
+
+###
+GET http://localhost:3000/api/product/get
+
+###
+GET http://localhost:3000/api/product/1
+
+###
+POST http://localhost:3000/api/product/save
+
+###
+PUT  http://localhost:3000/api/product/update
+
+###
+DELETE  http://localhost:3000/api/product/delete
